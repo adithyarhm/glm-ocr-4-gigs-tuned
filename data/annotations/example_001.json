@@ -1,0 +1,27 @@
+{
+  "image": "example_001.jpg",
+  "invoice_no": "INV-2024-001",
+  "date": "15/05/2024",
+  "vendor": {
+    "name": "PT Contoh Vendor",
+    "address": "Jl. Contoh No. 1, Bandung, Jawa Barat",
+    "npwp": "01.234.567.8-901.000"
+  },
+  "bill_to": {
+    "name": "PT Pembeli Setia",
+    "address": "Jl. Pembeli No. 5, Bandung"
+  },
+  "items": [
+    {
+      "description": "Laptop ASUS ROG G513",
+      "qty": 2,
+      "unit_price": 8500000,
+      "subtotal": 17000000
+    }
+  ],
+  "subtotal": 17000000,
+  "tax_rate": "11%",
+  "tax_amount": 1870000,
+  "total": 18870000,
+  "currency": "IDR"
+}

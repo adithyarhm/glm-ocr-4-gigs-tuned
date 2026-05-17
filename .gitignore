@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.env
+venv/
+.venv/
+
+# Model weights & checkpoints (too large for git)
+saves/
+merged/
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Dataset raw files (keep annotations, ignore images)
+data/raw/
+
+# Logs
+logs/
+runs/
+wandb/
+mlruns/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db

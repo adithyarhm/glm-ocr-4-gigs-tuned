@@ -1,0 +1,27 @@
+# Core training dependencies
+torch>=2.3.0
+torchvision>=0.18.0
+transformers>=4.47.0
+peft>=0.13.0
+trl>=0.12.0
+bitsandbytes>=0.44.0
+accelerate>=0.34.0
+datasets>=3.0.0
+
+# LLaMA-Factory (install separately via git)
+# git clone https://github.com/hiyouga/LLaMA-Factory
+# pip install -e ".[torch,metrics,bitsandbytes]"
+
+# Inference dependencies
+llama-cpp-python[cuda]>=0.3.0  # for GGUF inference
+openai>=1.0.0                  # for OpenAI-compatible API server
+
+# Dataset & utilities
+pillow>=10.0.0
+numpy>=1.26.0
+tqdm>=4.66.0
+pydantic>=2.0.0
+
+# Optional: experiment tracking
+# mlflow>=2.10.0
+# wandb>=0.18.0
