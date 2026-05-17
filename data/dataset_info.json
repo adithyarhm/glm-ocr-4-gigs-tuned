@@ -1,6 +1,19 @@
 {
-  "invoice_kie": {
-    "file_name": "invoice_dataset.json",
+  "invoice_kie_train": {
+    "file_name": "invoice_dataset_train.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "invoice_kie_val": {
+    "file_name": "invoice_dataset_val.json",
     "formatting": "sharegpt",
     "columns": {
       "messages": "messages"

@@ -1,11 +1,12 @@
-# GLM-OCR Fine-Tuned for Invoice Extraction
+# GLM-OCR Fine-Tuned for Receipt/Invoice Extraction
 
-> Fine-tuning `zai-org/GLM-OCR` (0.9B) for invoice/receipt structured JSON extraction, optimized for deployment on 4GB VRAM hardware.
+> Fine-tuning `zai-org/GLM-OCR` (0.9B) for receipt & invoice structured JSON extraction,  
+> optimized for deployment on **4GB VRAM** hardware via GGUF Q4_K_M quantization.
 
 ## Architecture
 
 ```
-Invoice Image → GLM-OCR (fine-tuned) → Structured JSON
+Receipt Image → GLM-OCR (fine-tuned) → Structured JSON
 ```
 
 No separate OCR engine needed — GLM-OCR handles vision + extraction end-to-end.
@@ -15,103 +16,114 @@ No separate OCR engine needed — GLM-OCR handles vision + extraction end-to-end
 | Stage | Hardware | VRAM Usage |
 |---|---|---|
 | Fine-tuning | RTX 4080 Super (16GB) | ~6-8 GB (LoRA FP16) |
-| Deployment | Any GPU with 4GB VRAM | ~1.5 GB (Q4_K_M GGUF) |
+| Deployment | Any GPU ≥4GB VRAM | ~1.5 GB (GGUF Q4_K_M) |
 
-## Project Structure
+## Dataset Format
 
-```
-├── data/
-│   ├── raw/                  # Raw invoice images
-│   ├── annotations/          # JSON ground truth labels
-│   ├── dataset_info.json     # LLaMA-Factory dataset registry
-│   └── invoice_dataset.json  # Formatted training dataset
-├── configs/
-│   └── finetune.yaml         # LLaMA-Factory training config
-├── scripts/
-│   ├── prepare_dataset.py    # Build dataset from raw images + labels
-│   ├── train.py              # Launch fine-tuning
-│   ├── export_merge.py       # Merge LoRA adapter → full weights
-│   ├── quantize.sh           # Convert to GGUF Q4_K_M
-│   └── inference.py          # Test inference (HF + GGUF)
-├── saves/                    # Training checkpoints (gitignored)
-├── merged/                   # Merged model weights (gitignored)
-├── requirements.txt
-└── .gitignore
-```
+This project uses **SROIE-format** annotations: word-level bounding quads with semantic category tags.
 
-## Quick Start
-
-### 1. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 2. Prepare dataset
-```bash
-python scripts/prepare_dataset.py \
-  --images_dir data/raw \
-  --labels_dir data/annotations \
-  --output data/invoice_dataset.json
-```
-
-### 3. Fine-tune
-```bash
-python scripts/train.py
-# or directly:
-chamafactory-cli train configs/finetune.yaml
-```
-
-### 4. Merge + Export
-```bash
-python scripts/export_merge.py
-```
-
-### 5. Quantize for deployment
-```bash
-bash scripts/quantize.sh
-```
-
-### 6. Run inference
-```bash
-# HuggingFace format (after fine-tuning, before quantize)
-python scripts/inference.py --mode hf --image path/to/invoice.jpg
-
-# GGUF format (after quantize, for 4GB VRAM deployment)
-python scripts/inference.py --mode gguf --image path/to/invoice.jpg
-```
+| Category | Description |
+|---|---|
+| `menu.nm` | Item name |
+| `menu.cnt` | Item quantity |
+| `menu.price` | Item total price |
+| `sub_total.subtotal_price` | Subtotal before tax |
+| `sub_total.service_price` | Service charge |
+| `sub_total.tax_price` | Tax amount |
+| `sub_total.etc` | Rounding / misc |
+| `total.total_price` | Grand total |
 
 ## Output JSON Schema
 
 ```json
 {
-  "invoice_no": "INV-2024-001",
-  "date": "15/05/2024",
-  "vendor": {
-    "name": "PT Maju Jaya",
-    "address": "Jl. Sudirman No. 1, Jakarta",
-    "npwp": "01.234.567.8-901.000"
-  },
-  "bill_to": {
-    "name": "PT Pembeli Setia",
-    "address": "Jl. Gatot Subroto No. 5, Bandung"
-  },
   "items": [
-    {
-      "description": "Laptop ASUS ROG",
-      "qty": 2,
-      "unit_price": 8500000,
-      "subtotal": 17000000
-    }
+    {"description": "Nasi Campur Bali", "qty": 1, "total": 75000},
+    {"description": "Bbk Bengil Nasi",  "qty": 1, "total": 125000}
   ],
-  "subtotal": 17000000,
-  "tax_rate": "11%",
-  "tax_amount": 1870000,
-  "total": 18870000,
-  "currency": "IDR"
+  "subtotal":    1346000,
+  "service":     100950,
+  "tax":         144695,
+  "rounding":    "Rounding -45",
+  "grand_total": 1591600,
+  "currency":    "IDR"
 }
 ```
 
+## Project Structure
+
+```
+├── data/
+│   ├── raw/                         # Receipt images (.jpg/.png)
+│   ├── annotations/                 # SROIE JSON annotation files
+│   ├── dataset_info.json            # LLaMA-Factory dataset registry
+│   ├── invoice_dataset_train.json   # Generated training set
+│   └── invoice_dataset_val.json     # Generated validation set
+├── configs/
+│   └── finetune.yaml                # LLaMA-Factory training config
+├── scripts/
+│   ├── convert_sroie_to_training.py # SROIE → sharegpt format converter ⭐
+│   ├── train.py                     # Fine-tuning launcher
+│   ├── export_merge.py              # Merge LoRA adapter → full model
+│   ├── quantize.sh                  # Convert to GGUF Q4_K_M
+│   └── inference.py                 # Test inference (HF + GGUF modes)
+└── requirements.txt
+```
+
+## Quick Start
+
+### 1. Install dependencies
+
+```bash
+git clone https://github.com/adithyarhm/glm-ocr-4-gigs-tuned
+cd glm-ocr-4-gigs-tuned
+pip install -r requirements.txt
+
+# Install LLaMA-Factory
+git clone https://github.com/hiyouga/LLaMA-Factory
+cd LLaMA-Factory && pip install -e ".[torch,metrics,bitsandbytes]" && cd ..
+```
+
+### 2. Prepare data
+
+```bash
+# Place files:
+#   data/raw/receipt_00000.jpg
+#   data/annotations/receipt_00000.json  (SROIE format)
+
+# Convert SROIE annotations → LLaMA-Factory training dataset
+python scripts/convert_sroie_to_training.py
+# Output: data/invoice_dataset_train.json + data/invoice_dataset_val.json
+```
+
+### 3. Fine-tune
+
+```bash
+python scripts/train.py
+# or directly:
+llamafactory-cli train configs/finetune.yaml
+```
+
+### 4. Merge + Export + Quantize
+
+```bash
+python scripts/export_merge.py
+bash scripts/quantize.sh
+```
+
+### 5. Inference
+
+```bash
+# With HuggingFace merged model
+python scripts/inference.py --mode hf --image data/raw/receipt_00000.jpg
+
+# With GGUF Q4_K_M (for 4GB VRAM deployment)
+python scripts/inference.py --mode gguf --image data/raw/receipt_00000.jpg
+```
+
 ## References
+
 - [zai-org/GLM-OCR](https://huggingface.co/zai-org/GLM-OCR)
 - [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
-- [GLM-OCR Technical Report](https://arxiv.org/abs/2603.10910)
+- [GLM-OCR Technical Report (arXiv:2603.10910)](https://arxiv.org/abs/2603.10910)
+- [SROIE Dataset Format](https://rrc.cvc.uab.es/?ch=13)
