@@ -135,20 +135,26 @@ def sroie_to_structured_json(annotation: dict) -> dict:
 # Build one sharegpt training sample
 # ---------------------------------------------------------------
 def build_training_sample(image_path: str, structured_json: dict) -> dict:
+    """
+    LLaMA-Factory sharegpt multimodal format defaults (from parser.py):
+      role_tag      = "from"
+      content_tag   = "value"
+      user_tag      = "human"
+      assistant_tag = "gpt"
+    Images go in a top-level "images" list; reference via <image> token in text.
+    """
     return {
         "messages": [
             {
-                "role": "user",
-                "content": [
-                    {"type": "image", "image": image_path},
-                    {"type": "text",  "text": USER_PROMPT}
-                ]
+                "from": "human",
+                "value": f"<image>{USER_PROMPT}"
             },
             {
-                "role": "assistant",
-                "content": json.dumps(structured_json, ensure_ascii=False)
+                "from": "gpt",
+                "value": json.dumps(structured_json, ensure_ascii=False)
             }
-        ]
+        ],
+        "images": [image_path]
     }
 
 

@@ -31,18 +31,25 @@ def check_environment():
     print("[OK] LLaMA-Factory found")
 
 
-def check_dataset(dataset_path: str = "data/invoice_dataset.json"):
-    """Warn if dataset file is missing."""
-    p = Path(dataset_path)
-    if not p.exists():
-        print(f"[WARN] Dataset not found at {p}")
-        print("       Run prepare_dataset.py first:")
-        print("       python scripts/prepare_dataset.py")
-        sys.exit(1)
+def check_dataset():
+    """Warn if train/val split files are missing."""
     import json
-    with open(p) as f:
-        data = json.load(f)
-    print(f"[OK] Dataset: {len(data)} samples found at {p}")
+    splits = {
+        "train": Path("data/invoice_dataset_train.json"),
+        "val":   Path("data/invoice_dataset_val.json"),
+    }
+    for name, p in splits.items():
+        if not p.exists():
+            print(f"[WARN] {name} split not found at {p}")
+            print("       Run convert_sroie_to_training.py first:")
+            print("       python scripts/convert_sroie_to_training.py")
+            sys.exit(1)
+        if not p.is_file():
+            print(f"[ERROR] {p} exists but is not a file (is it a directory?)")
+            sys.exit(1)
+        with open(p) as f:
+            data = json.load(f)
+        print(f"[OK] {name:5s} split: {len(data):4d} samples → {p}")
 
 
 def main():

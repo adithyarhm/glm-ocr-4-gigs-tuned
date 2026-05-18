@@ -32,7 +32,7 @@ cd ..
 
 # -- Step 2: Convert to FP16 GGUF -----------------------------
 echo "[3/4] Converting to FP16 GGUF..."
-python "$LLAMA_CPP_DIR/convert_hf_to_gguf.py" \
+python3 "$LLAMA_CPP_DIR/convert_hf_to_gguf.py" \
     "$MERGED_MODEL_DIR" \
     --outtype f16 \
     --outfile "$OUTPUT_F16"

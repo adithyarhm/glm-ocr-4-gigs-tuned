@@ -19,6 +19,7 @@ merged/
 
 # Dataset raw files (keep annotations, ignore images)
 data/raw/
+data/annotations/
 
 # Logs
 logs/

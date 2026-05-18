@@ -1,0 +1,1187 @@
+[
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"3002-Kyoto Choco Mochi\", \"qty\": 1, \"total\": 56000}, {\"description\": \"3001-Sakura Mochi\", \"qty\": 1, \"total\": 14000}, {\"description\": \"6001-Plastic Bag Small\", \"qty\": 1, \"total\": 0}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 70000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00374.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"WHDP JR 15K\", \"qty\": 1, \"total\": 15000}, {\"description\": \"TakeQuay Charge\", \"qty\": 1, \"total\": 909}], \"subtotal\": 15909, \"service\": 0, \"tax\": 1591, \"rounding\": \"\", \"grand_total\": 17500, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00652.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"NASI RAMES\", \"qty\": 1, \"total\": 15000}, {\"description\": \"AYAM PANGGANG\", \"qty\": 1, \"total\": 22000}, {\"description\": \"ES TEH/TAWAR\", \"qty\": 1, \"total\": 11000}], \"subtotal\": 48000, \"service\": 3600, \"tax\": 5160, \"rounding\": \"\", \"grand_total\": 56760, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00465.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"MANUKA HONEY\", \"qty\": 1, \"total\": 385000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 3850000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00791.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"GANACHE MOUSSE PIECE\", \"qty\": 1, \"total\": 32500}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 32500, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00753.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"IKAN GURAME MED SOP IKAN\", \"qty\": 1, \"total\": 158000}, {\"description\": \"CUMI GR JUNJAN =*MEDIUM*=\", \"qty\": 1, \"total\": 129000}, {\"description\": \"CUMI GR TEPUNG =*MEDIUM*=\", \"qty\": 1, \"total\": 129000}, {\"description\": \"AGSIO TH PC JMR =*MEDIUM*=\", \"qty\": 1, \"total\": 147000}, {\"description\": \"POCAI BWG PUTIH =*MEDIUM*=\", \"qty\": 1, \"total\": 90000}, {\"description\": \"LUMPIA UDG PREM =*MEDIUM*=\", \"qty\": 1, \"total\": 144000}, {\"description\": \"NASI PUTIH\", \"qty\": 6, \"total\": 60000}, {\"description\": \"HOT TEA\", \"qty\": 3, \"total\": 36000}, {\"description\": \"AQUA\", \"qty\": 1, \"total\": 11000}, {\"description\": \"ICED TEA\", \"qty\": 2, \"total\": 24000}, {\"description\": \"ICED TEA\", \"qty\": 1, \"total\": 12000}], \"subtotal\": 940000, \"service\": 56400, \"tax\": 99640, \"rounding\": \"OTHERS 60,000\", \"grand_total\": 1096040, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00103.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"RISOL ROGUT\", \"qty\": 1, \"total\": 8182}, {\"description\": \"MINERALWATER\", \"qty\": 1, \"total\": 5454}], \"subtotal\": 13636, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 14999, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00779.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"REDBEAN BREAD\", \"qty\": 4, \"total\": 36000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 36000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00081.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"ALMOND CREAM CHEESE\", \"qty\": 2, \"total\": 56000}], \"subtotal\": 56000, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 56000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00296.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"Pepenero Pastel\", \"qty\": 1, \"total\": 15000}, {\"description\": \"Arem Arem\", \"qty\": 1, \"total\": 12000}], \"subtotal\": 27000, \"service\": 0, \"tax\": 2700, \"rounding\": \"\", \"grand_total\": 29700, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00233.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"Fruit Compliment\", \"qty\": 1, \"total\": 0}, {\"description\": \"Udang Mentega Sdg (M\", \"qty\": 1, \"total\": 162000}, {\"description\": \"Chinese Tea-Jasmine\", \"qty\": 2, \"total\": 20000}, {\"description\": \"Buruno Gr IN\", \"qty\": 5, \"total\": 230000}, {\"description\": \"Nasi Putih\", \"qty\": 5, \"total\": 45000}], \"subtotal\": 457000, \"service\": 27420, \"tax\": 48442, \"rounding\": \"SUBTOTAL 378,600\", \"grand_total\": 0, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00680.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"BASO TAHU BIHUN\", \"qty\": 1, \"total\": 43636}], \"subtotal\": 43636, \"service\": 0, \"tax\": 4364, \"rounding\": \"\", \"grand_total\": 48000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00046.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"GREEN TEA LATTE (L)\", \"qty\": 1, \"total\": 16363}], \"subtotal\": 16363, \"service\": 0, \"tax\": 1636, \"rounding\": \"\", \"grand_total\": 17999, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00071.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"SAUSAGE DONUT\", \"qty\": 1, \"total\": 13000}, {\"description\": \"TLJ CROQUETTE\", \"qty\": 1, \"total\": 17000}, {\"description\": \"CORONET\", \"qty\": 2, \"total\": 27000}, {\"description\": \"SPOOKY SOBORO\", \"qty\": 2, \"total\": 24000}, {\"description\": \"SCREAMING RED BEAN\", \"qty\": 1, \"total\": 13000}, {\"description\": \"PIZZA TOAST\", \"qty\": 1, \"total\": 16000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 110000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00726.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"PEPPERONI\", \"qty\": 1, \"total\": 23000}, {\"description\": \"ALMOND CREAM CHEESE\", \"qty\": 1, \"total\": 28000}], \"subtotal\": 51000, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 51000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00196.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"DEPT04\", \"qty\": 1, \"total\": 24000}, {\"description\": \"DEPT01\", \"qty\": 1, \"total\": 22000}], \"subtotal\": 46000, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 46000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00593.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"S-Ovaltine Macchiat\", \"qty\": 1, \"total\": 22000}, {\"description\": \"S-Hazelnut Milk Tea\", \"qty\": 1, \"total\": 20000}], \"subtotal\": 42000, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 42000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00371.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"ORIGINAL\", \"qty\": 1, \"total\": 12000}, {\"description\": \"TIRAMISU CIN\", \"qty\": 1, \"total\": 14000}, {\"description\": \"MUF CHOC CHP\", \"qty\": 1, \"total\": 12000}, {\"description\": \"CHO CAKE SMA\", \"qty\": 1, \"total\": 12000}, {\"description\": \"RED VELVET\", \"qty\": 1, \"total\": 20000}, {\"description\": \"HAZELNUT\", \"qty\": 1, \"total\": 15000}, {\"description\": \"TIRAMISU CIN\", \"qty\": 1, \"total\": 14000}, {\"description\": \"ORIGINAL\", \"qty\": 1, \"total\": 12000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 111000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00635.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"S-Ovaltine Macchiat\", \"qty\": 1, \"total\": 44000}, {\"description\": \"S-KOI Cafe Macchiat\", \"qty\": 1, \"total\": 25000}], \"subtotal\": 62727, \"service\": 0, \"tax\": 6272, \"rounding\": \"\", \"grand_total\": 69000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00645.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"PAKET SUPER MANTAP 2A RAACHA\", \"qty\": 1, \"total\": 59091}, {\"description\": \"RICE\", \"qty\": 1, \"total\": 6364}], \"subtotal\": 65455, \"service\": 0, \"tax\": 6546, \"rounding\": \"\", \"grand_total\": 72001, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00300.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"PILOW DUR PX\", \"qty\": 1, \"total\": 40000}, {\"description\": \"NASI BAKAR\", \"qty\": 1, \"total\": 31500}, {\"description\": \"MIKA BESAR\", \"qty\": 1, \"total\": 0}, {\"description\": \"SENDOK MAKAN\", \"qty\": 1, \"total\": 0}, {\"description\": \"SIOMAY\", \"qty\": 1, \"total\": 38000}, {\"description\": \"MIKA SEDANG\", \"qty\": 1, \"total\": 0}, {\"description\": \"GARPU MAKAN\", \"qty\": 1, \"total\": 0}, {\"description\": \"MACARONI GR\", \"qty\": 1, \"total\": 9000}, {\"description\": \"PASTELGORENG\", \"qty\": 1, \"total\": 9000}, {\"description\": \"SEMAR MENDEM\", \"qty\": 1, \"total\": 9000}, {\"description\": \"BAKWAN JAGUNG\", \"qty\": 1, \"total\": 6500}, {\"description\": \"PLASTIK TENTENG\", \"qty\": 1, \"total\": 0}], \"subtotal\": 100100, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 100100, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00567.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"THAI ICED TEA (L)\", \"qty\": 1, \"total\": 16363}], \"subtotal\": 16363, \"service\": 0, \"tax\": 1636, \"rounding\": \"\", \"grand_total\": 17999, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00080.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"escargot florentine\", \"qty\": 1, \"total\": 32000}, {\"description\": \"Zurich Geschnitzel\", \"qty\": 1, \"total\": 82000}, {\"description\": \"Valdostana\", \"qty\": 3, \"total\": 177000}, {\"description\": \"Chicken Herb Crust\", \"qty\": 1, \"total\": 52000}, {\"description\": \"Lasagna Di Carne\", \"qty\": 1, \"total\": 54000}, {\"description\": \"Lemon Jc\", \"qty\": 1, \"total\": 25000}, {\"description\": \"Apple Pie\", \"qty\": 1, \"total\": 25000}, {\"description\": \"hot tea\", \"qty\": 1, \"total\": 12000}, {\"description\": \"hot lemon tea\", \"qty\": 1, \"total\": 22000}], \"subtotal\": 481000, \"service\": 24050, \"tax\": 48100, \"rounding\": \"\", \"grand_total\": 553200, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00388.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"TT\", \"qty\": 1, \"total\": 20000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 20000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00127.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"GYOZA AYAM GORENG\", \"qty\": 1, \"total\": 32000}, {\"description\": \"OCHA DINGIN\", \"qty\": 3, \"total\": 36000}, {\"description\": \"RAMEN AYAM SPECIAL\", \"qty\": 3, \"total\": 186000}], \"subtotal\": 254000, \"service\": 12700, \"tax\": 26670, \"rounding\": \"\", \"grand_total\": 293370, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00551.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"Avocado with Rock Salt and Cocoa\", \"qty\": 1, \"total\": 30000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 30000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00471.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"CHOCO PUFF\", \"qty\": 1, \"total\": 29091}, {\"description\": \"CREAMY BEEF CLS FTC\", \"qty\": 1, \"total\": 42727}, {\"description\": \"NEW ORIENTAL CHK RICE\", \"qty\": 1, \"total\": 34545}, {\"description\": \"LIPTON PITCHER\", \"qty\": 1, \"total\": 54545}, {\"description\": \"SC/P SUPER SUPREME\", \"qty\": 1, \"total\": 47273}, {\"description\": \"CB/P BLACK PEPP BEEF\", \"qty\": 1, \"total\": 48182}], \"subtotal\": 256363, \"service\": 0, \"tax\": 25637, \"rounding\": \"\", \"grand_total\": 282000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00044.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"DEPT01\", \"qty\": 1, \"total\": 22000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 22000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00270.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"Nasi (MLY)\", \"qty\": 1, \"total\": 6000}], \"subtotal\": 6000, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 6000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00620.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"Soft Ori 3 Top\", \"qty\": 1, \"total\": 17272}], \"subtotal\": 17272, \"service\": 0, \"tax\": 1727, \"rounding\": \"\", \"grand_total\": 18999, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00353.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"Honey Mandarin\", \"qty\": 1, \"total\": 13000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 13000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00368.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"S-Ovaltine Macchiat\", \"qty\": 1, \"total\": 22000}, {\"description\": \"S-Hazelnut Milk Tea\", \"qty\": 1, \"total\": 23000}], \"subtotal\": 40910, \"service\": 0, \"tax\": 4090, \"rounding\": \"\", \"grand_total\": 45000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00099.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"Seaweed Chicken\", \"qty\": 1, \"total\": 42000}], \"subtotal\": 42000, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 0, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00390.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"4002-Chocolate Orange Peel\", \"qty\": 1, \"total\": 38000}, {\"description\": \"6001-Plastic Bag Small\", \"qty\": 1, \"total\": 0}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 38000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00094.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"Dimsum\", \"qty\": 2, \"total\": 30000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 30000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00790.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"TRAD KY TOAST CARTE\", \"qty\": 1, \"total\": 28182}], \"subtotal\": 28182, \"service\": 0, \"tax\": 2818, \"rounding\": \"\", \"grand_total\": 31000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00345.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"KING DEAL CHEESE BURGER R\", \"qty\": 1, \"total\": 25000}, {\"description\": \"1 PC BIC\", \"qty\": 1, \"total\": 15909}], \"subtotal\": 40909, \"service\": 0, \"tax\": 4091, \"rounding\": \"\", \"grand_total\": 45000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00220.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"DEPT04\", \"qty\": 1, \"total\": 24000}, {\"description\": \"DEPT01\", \"qty\": 1, \"total\": 22000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 46000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00159.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"Viet Milk Coffee\", \"qty\": 1, \"total\": 25000}], \"subtotal\": 25000, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 25000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00765.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"GONG GIBAB\", \"qty\": 1, \"total\": 20000}, {\"description\": \"BO SSAM\", \"qty\": 1, \"total\": 320000}, {\"description\": \"HAEMUL DENJANG JJIGAE\", \"qty\": 1, \"total\": 85000}, {\"description\": \"MULNAENGMYO N\", \"qty\": 1, \"total\": 85000}], \"subtotal\": 510000, \"service\": 35700, \"tax\": 54255, \"rounding\": \"\", \"grand_total\": 599955, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00349.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"Chicken Mushroom Puf f\", \"qty\": 1, \"total\": 20000}], \"subtotal\": 20000, \"service\": 0, \"tax\": 2000, \"rounding\": \"\", \"grand_total\": 22000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00784.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"golden\", \"qty\": 1, \"total\": 490000}], \"subtotal\": 4554545, \"service\": 0, \"tax\": 445455, \"rounding\": \"\", \"grand_total\": 4900000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00719.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"Arem Arem\", \"qty\": 1, \"total\": 12000}], \"subtotal\": 12000, \"service\": 0, \"tax\": 1200, \"rounding\": \"\", \"grand_total\": 13200, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00163.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"BASO TAHU\", \"qty\": 1, \"total\": 43181}, {\"description\": \"ES JERUK\", \"qty\": 1, \"total\": 13000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 61799, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00006.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"DOUBLE CHICK BREAST\", \"qty\": 1, \"total\": 89000}, {\"description\": \"IPED MANDARIN\", \"qty\": 1, \"total\": 38000}], \"subtotal\": 127000, \"service\": 9525, \"tax\": 13653, \"rounding\": \"SUBTOTAL 114,300\", \"grand_total\": 137478, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00284.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"ES KOPI SUSU\", \"qty\": 6, \"total\": 108000}, {\"description\": \"ES KOPI SOKLAT\", \"qty\": 1, \"total\": 20000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 128000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00605.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"Masker Bengkuang\", \"qty\": 1, \"total\": 11000}], \"subtotal\": 11000, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 0, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00460.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"TRIPPLE CHEESE\", \"qty\": 1, \"total\": 17000}], \"subtotal\": 17000, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 17000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00225.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"4005-Maple glazed\", \"qty\": 1, \"total\": 25000}, {\"description\": \"6001-Plastic Bag Small\", \"qty\": 1, \"total\": 0}, {\"description\": \"5003-Chokoreto Cookies\", \"qty\": 1, \"total\": 62000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 87000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00430.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"LS TOILETBRUSH102\", \"qty\": 1, \"total\": 38900}, {\"description\": \"TAMMIA 259\", \"qty\": 1, \"total\": 25900}, {\"description\": \"WDH SUN GEL 40ML\", \"qty\": 1, \"total\": 33500}, {\"description\": \"TAM 424 BUFFER 219\", \"qty\": 1, \"total\": 21900}, {\"description\": \"SIKAT BOTOL/BSC\", \"qty\": 1, \"total\": 67600}, {\"description\": \"GOCUJANG H.200G\", \"qty\": 1, \"total\": 27400}, {\"description\": \"PM CABE HIJAU CURA\", \"qty\": 1, \"total\": 2400}, {\"description\": \"TIMUN JEPANG\", \"qty\": 1, \"total\": 14894}, {\"description\": \"KONGKEE TOFU JEPUN\", \"qty\": 1, \"total\": 7420}, {\"description\": \"+PALM SHW GEL 450\", \"qty\": 1, \"total\": 33500}], \"subtotal\": 246073, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 246073, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00787.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"ALMOND CHOCO CREAM CHEESE\", \"qty\": 1, \"total\": 28000}], \"subtotal\": 28000, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 28000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00723.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"KAKE UDON\", \"qty\": 1, \"total\": 30909}, {\"description\": \"KITSUNE UDON (KIDS)\", \"qty\": 1, \"total\": 28182}, {\"description\": \"COLD OCHA\", \"qty\": 1, \"total\": 10909}, {\"description\": \"SKEWERED TOFU ROLL\", \"qty\": 1, \"total\": 12727}, {\"description\": \"EBI TEMPURA\", \"qty\": 1, \"total\": 13636}], \"subtotal\": 96363, \"service\": 0, \"tax\": 9636, \"rounding\": \"\", \"grand_total\": 105999, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00667.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"MEDIUM FRIES\", \"qty\": 1, \"total\": 14545}, {\"description\": \"REGULAR COKE\", \"qty\": 1, \"total\": 7273}, {\"description\": \"K11 CHOCO 1217\", \"qty\": 1, \"total\": 5000}], \"subtotal\": 26818, \"service\": 0, \"tax\": 2682, \"rounding\": \"\", \"grand_total\": 29500, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00738.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"AYAM\", \"qty\": 1, \"total\": 20000}, {\"description\": \"DONAT AYAM\", \"qty\": 1, \"total\": 20000}, {\"description\": \"ROTI SISIR\", \"qty\": 1, \"total\": 17727}, {\"description\": \"BANANA SPLIT\", \"qty\": 1, \"total\": 28635}, {\"description\": \"DONATCOKLAT\", \"qty\": 1, \"total\": 40000}, {\"description\": \"TIGER ROLL PTG\", \"qty\": 1, \"total\": 8636}, {\"description\": \"MARMER CAKE PTG\", \"qty\": 1, \"total\": 6818}, {\"description\": \"BOLU HAWAI PTNG\", \"qty\": 1, \"total\": 5909}, {\"description\": \"BANANA CAKE PTG\", \"qty\": 1, \"total\": 6818}, {\"description\": \"MANDARIN CAKE PTG\", \"qty\": 1, \"total\": 16364}, {\"description\": \"LAPIS SURABAYA PTG\", \"qty\": 1, \"total\": 33636}, {\"description\": \"CAKE PITA\", \"qty\": 1, \"total\": 11818}, {\"description\": \"PLASTIK TENTENG KECIL\", \"qty\": 1, \"total\": 0}], \"subtotal\": 216361, \"service\": 0, \"tax\": 21636, \"rounding\": \"\", \"grand_total\": 237997, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00203.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"MANGGO SMOOTHIE\", \"qty\": 1, \"total\": 20909}], \"subtotal\": 20909, \"service\": 0, \"tax\": 2091, \"rounding\": \"\", \"grand_total\": 23000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00576.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"MEGA\", \"qty\": 1, \"total\": 30000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 30000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00027.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"SUKIYAKI BEEF RICE DEALJAVA\", \"qty\": 1, \"total\": 41728}], \"subtotal\": 41728, \"service\": 0, \"tax\": 4173, \"rounding\": \"\", \"grand_total\": 45901, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00618.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"ORI SLMN\", \"qty\": 1, \"total\": 49000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 49000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00518.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"VANBALL\", \"qty\": 1, \"total\": 9000}], \"subtotal\": 9000, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 9000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00238.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"CIRENG PANDAWA\", \"qty\": 1, \"total\": 26818}], \"subtotal\": 26818, \"service\": 0, \"tax\": 2681, \"rounding\": \"\", \"grand_total\": 29500, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00223.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"ORIGINAL NO SALT\", \"qty\": 1, \"total\": 12000}], \"subtotal\": 12000, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 12000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00095.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"VANDOOLEN\", \"qty\": 1, \"total\": 8182}, {\"description\": \"PLASTIK 25\", \"qty\": 1, \"total\": 0}], \"subtotal\": 8182, \"service\": 0, \"tax\": 818, \"rounding\": \"\", \"grand_total\": 9000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00030.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"Ketoprak\", \"qty\": 1, \"total\": 36000}], \"subtotal\": 36000, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 36000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00032.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"TORI BAITAN UDON\", \"qty\": 1, \"total\": 43636}, {\"description\": \"BEEF CURRY RICE\", \"qty\": 1, \"total\": 49091}, {\"description\": \"INARI\", \"qty\": 1, \"total\": 10000}, {\"description\": \"COLD OCHA\", \"qty\": 1, \"total\": 10909}], \"subtotal\": 113636, \"service\": 0, \"tax\": 11364, \"rounding\": \"\", \"grand_total\": 125000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00433.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"WARISAN 2 FREE DRINK\", \"qty\": 1, \"total\": 63000}, {\"description\": \"WARISAN 2 FREE DRINK\", \"qty\": 1, \"total\": 63000}], \"subtotal\": 126000, \"service\": 0, \"tax\": 12600, \"rounding\": \"\", \"grand_total\": 138600, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00606.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"Mineral Water\", \"qty\": 1, \"total\": 5000}], \"subtotal\": 5000, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 5000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00089.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"Nasi\", \"qty\": 1, \"total\": 6000}, {\"description\": \"Soup Patin\", \"qty\": 1, \"total\": 20000}, {\"description\": \"Kerang/Kikil\", \"qty\": 1, \"total\": 10000}, {\"description\": \"Tahu Woku\", \"qty\": 1, \"total\": 4000}, {\"description\": \"Tahu Bakso\", \"qty\": 1, \"total\": 5000}, {\"description\": \"Teh Kotak\", \"qty\": 1, \"total\": 5000}, {\"description\": \"Mineral Cup\", \"qty\": 1, \"total\": 2000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 52000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00560.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"SKECHERS GIRLS NO COLOR, 4\", \"qty\": 1, \"total\": 39900000}], \"subtotal\": 39900000, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 39900000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00763.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"ICED TT\", \"qty\": 1, \"total\": 20000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 0, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00695.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"KOPI SUSU\", \"qty\": 1, \"total\": 17500}, {\"description\": \"KOPI SUSU\", \"qty\": 1, \"total\": 17500}, {\"description\": \"NASI GORENG\", \"qty\": 1, \"total\": 22500}, {\"description\": \"BAKPIA KACANG H\", \"qty\": 1, \"total\": 4000}], \"subtotal\": 61500, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 61500, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00104.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"TWIST DONUT\", \"qty\": 1, \"total\": 9000}, {\"description\": \"MILK PASTRY ROLL\", \"qty\": 1, \"total\": 9000}, {\"description\": \"[MD] SOFT STEAMED CHOCOCAKE\", \"qty\": 1, \"total\": 10000}, {\"description\": \"REDBEAN BREAD\", \"qty\": 1, \"total\": 9000}, {\"description\": \"KAYA BUN\", \"qty\": 1, \"total\": 9500}, {\"description\": \"PREMIUM MILK PAN BREAD\", \"qty\": 1, \"total\": 17500}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 64000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00759.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"Pillow Choco\", \"qty\": 1, \"total\": 18000}, {\"description\": \"Pillow Cheese\", \"qty\": 1, \"total\": 18000}, {\"description\": \"Pillow Kombi\", \"qty\": 1, \"total\": 19500}], \"subtotal\": 55500, \"service\": 0, \"tax\": 0, \"rounding\": \"ROUNDING 0\", \"grand_total\": 55500, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00142.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"TRIPPLE CHEESE\", \"qty\": 1, \"total\": 17000}], \"subtotal\": 17000, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 17000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00228.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"RTD Madu Aloevera\", \"qty\": 1, \"total\": 15000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 15000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00250.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"NESTLE 600 M1\", \"qty\": 1, \"total\": 9500}], \"subtotal\": 9500, \"service\": 0, \"tax\": 950, \"rounding\": \"\", \"grand_total\": 10450, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00281.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"CB PR SIRLOIN\", \"qty\": 1, \"total\": 162000}, {\"description\": \"ES TEH TAWAR\", \"qty\": 1, \"total\": 8000}, {\"description\": \"COCA COLA\", \"qty\": 1, \"total\": 13000}], \"subtotal\": 183000, \"service\": 9150, \"tax\": 19215, \"rounding\": \"\", \"grand_total\": 211365, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00764.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"CRISPY CHOCO\", \"qty\": 1, \"total\": 14000}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 14000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00025.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"Puyo 6 (Package)\", \"qty\": 1, \"total\": 70000}], \"subtotal\": 70000, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 70000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00114.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "from": "human",
+        "value": "<image>Extract all receipt information from this image and return a valid JSON object matching exactly this schema:\n{\n  \"items\": [\n    {\n      \"description\": \"\",\n      \"qty\": 0,\n      \"total\": 0\n    }\n  ],\n  \"subtotal\": 0,\n  \"service\": 0,\n  \"tax\": 0,\n  \"rounding\": \"\",\n  \"grand_total\": 0,\n  \"currency\": \"\"\n}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"description\": \"RAKUNI KM KEJU PCS/PCS\", \"qty\": 1, \"total\": 0}], \"subtotal\": 0, \"service\": 0, \"tax\": 0, \"rounding\": \"\", \"grand_total\": 10000, \"currency\": \"IDR\"}"
+      }
+    ],
+    "images": [
+      "/home/reverse/Adith/glm-ocr-4-gigs-tuned/data/raw/receipt_00656.png"
+    ]
+  }
+]

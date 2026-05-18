@@ -22,34 +22,35 @@ from pathlib import Path
 # ---------------------------------------------------------------
 # JSON Schema (must match training schema in prepare_dataset.py)
 # ---------------------------------------------------------------
-INVOICE_SCHEMA = {
-    "invoice_no": "",
-    "date": "",
-    "vendor": {"name": "", "address": "", "npwp": ""},
-    "bill_to": {"name": "", "address": ""},
-    "items": [{"description": "", "qty": 0, "unit_price": 0, "subtotal": 0}],
-    "subtotal": 0,
-    "tax_rate": "",
-    "tax_amount": 0,
-    "total": 0,
-    "currency": ""
+# Must match the schema used in convert_sroie_to_training.py
+RECEIPT_SCHEMA = {
+    "items": [{"description": "", "qty": 0, "total": 0}],
+    "subtotal":    0,
+    "service":     0,
+    "tax":         0,
+    "rounding":    "",
+    "grand_total": 0,
+    "currency":    ""
 }
 
 SYSTEM_PROMPT = (
-    "You are an invoice data extraction expert. "
-    "Return ONLY a valid JSON object — no explanation, no markdown."
+    "You are a receipt data extraction expert. "
+    "Given a receipt image, extract all transaction information. "
+    "Return ONLY a valid JSON object — no explanation, no markdown, no extra text."
 )
 
 
 def build_user_prompt() -> str:
     return (
-        f"Extract all invoice information from this image and return a valid JSON object "
-        f"matching exactly this schema:\n{json.dumps(INVOICE_SCHEMA, indent=2, ensure_ascii=False)}"
+        f"Extract all receipt information from this image and return a valid JSON object "
+        f"matching exactly this schema:\n{json.dumps(RECEIPT_SCHEMA, indent=2, ensure_ascii=False)}"
     )
 
 
 def extract_json(text: str) -> dict:
     """Robustly extract first JSON object from model output."""
+    # Strip <think>...</think> reasoning blocks if present
+    text = re.sub(r"</?think>", "", text).strip()
     # Strip markdown code fences if present
     text = re.sub(r"```(?:json)?\n?", "", text).strip()
     match = re.search(r'\{[\s\S]*\}', text)
@@ -67,53 +68,69 @@ def extract_json(text: str) -> dict:
 # ---------------------------------------------------------------
 def infer_hf(image_path: str, model_dir: str, adapter_path: str = None):
     import torch
-    from transformers import AutoTokenizer, AutoModelForCausalLM
+    from transformers import GlmOcrForConditionalGeneration, AutoProcessor
     from PIL import Image
 
     print(f"[HF] Loading model from: {model_dir}")
-    tokenizer = AutoTokenizer.from_pretrained(model_dir, trust_remote_code=True)
+    # AutoProcessor handles both the tokenizer and image processor
+    processor = AutoProcessor.from_pretrained(model_dir, trust_remote_code=True)
 
     if adapter_path:
         # Load base + LoRA adapter (for testing mid-training)
         from peft import PeftModel
-        base = AutoModelForCausalLM.from_pretrained(
+        base = GlmOcrForConditionalGeneration.from_pretrained(
             model_dir, torch_dtype=torch.float16, device_map="auto", trust_remote_code=True
         )
         model = PeftModel.from_pretrained(base, adapter_path)
         model = model.merge_and_unload()
     else:
         # Load merged model directly
-        model = AutoModelForCausalLM.from_pretrained(
-            model_dir, torch_dtype=torch.float16, device_map="auto", trust_remote_code=True
+        model = GlmOcrForConditionalGeneration.from_pretrained(
+            model_dir,
+            torch_dtype=torch.bfloat16,
+            device_map="auto",
+            trust_remote_code=True
         )
 
     model.eval()
     image = Image.open(image_path).convert("RGB")
 
     messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user",   "content": build_user_prompt()}
+        {
+            "role": "user",
+            "content": [
+                {"type": "image"},
+                {"type": "text", "text": f"{SYSTEM_PROMPT}\n\n{build_user_prompt()}"}
+            ]
+        }
     ]
 
-    inputs = tokenizer.apply_chat_template(
+    # Step 1: render chat template to a text string (no tokenization)
+    prompt_text = processor.apply_chat_template(
         messages,
-        images=[image],
-        tokenize=True,
-        return_tensors="pt",
-        add_generation_prompt=True
-    ).to(model.device)
+        tokenize=False,
+        add_generation_prompt=True,
+    )
 
-    import torch
+    # Step 2: tokenize + process image together
+    inputs = processor(
+        text=prompt_text,
+        images=[image],
+        return_tensors="pt"
+    )
+    inputs = {k: v.to(model.device) for k, v in inputs.items()}
+
     with torch.inference_mode():
-        output = model.generate(
+        output_ids = model.generate(
             **inputs,
-            max_new_tokens=512,
+            max_new_tokens=1024,
             do_sample=False,
-            temperature=1.0,
         )
 
-    response = tokenizer.decode(
-        output[0][inputs["input_ids"].shape[1]:],
+    # Decode only the newly generated tokens
+    prompt_len = inputs["input_ids"].shape[1]
+    response = processor.tokenizer.decode(
+        output_ids[0][prompt_len:],
         skip_special_tokens=True
     )
     return extract_json(response)
